@@ -1,98 +1,91 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="S2J2 Ruby" />
+<h1 align="center">S2J2 Ruby Exercises</h1>
 
-  &#xa0;
+Simple, self‑contained Ruby scripts used for learning basic Ruby concepts and command‑line I/O. Each file can be run independently with the Ruby interpreter and most of them are interactive.
 
-  <!-- <a href="https://s2j2ruby.netlify.app">Demo</a> -->
-</div>
+Note: many prompts and outputs in the scripts are intentionally written in casual French; the README is in English for clarity.
 
-<h1 align="center">S2J2 Ruby</h1>
+## Overview
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/FlowTech-Lab/s2j2-ruby?color=56BEB8">
+This repository contains a set of small exercises (`exo_01.rb` … `exo_17.rb`). They cover:
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/FlowTech-Lab/s2j2-ruby?color=56BEB8">
+- Reading user input (`gets.chomp`) and printing output (`puts`)
+- Basic arithmetic and control flow
+- Loops and ranges
+- String formatting and simple data validation
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/FlowTech-Lab/s2j2-ruby?color=56BEB8">
+## Requirements
 
-  <img alt="License" src="https://img.shields.io/github/license/FlowTech-Lab/s2j2-ruby?color=56BEB8">
+- Ruby installed locally (2.7+ recommended). Check with: `ruby -v`.
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/FlowTech-Lab/s2j2-ruby?color=56BEB8" /> -->
+## How to Run
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/FlowTech-Lab/s2j2-ruby?color=56BEB8" /> -->
-
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/FlowTech-Lab/s2j2-ruby?color=56BEB8" /> -->
-</p>
-
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  S2J2 Ruby 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
-
-<p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/FlowTech-Lab" target="_blank">Author</a>
-</p>
-
-<br>
-
-## :dart: About ##
-
-Describe your project
-
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
-## :rocket: Technologies ##
-
-The following tools were used in this project:
-
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## :white_check_mark: Requirements ##
-
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
-
-## :checkered_flag: Starting ##
+Run any script directly with Ruby from the repository root:
 
 ```bash
-# Clone this project
-$ git clone https://github.com/FlowTech-Lab/s2j2-ruby
-
-# Access
-$ cd s2j2-ruby
-
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
+ruby exo_01.rb
+ruby exo_07.rb
+ruby exo_16.rb
 ```
 
-## :memo: License ##
+Some scripts prompt for input in the terminal. Provide the requested number or year, then press Enter.
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+## Contents
 
+- `exo_01.rb`: Print a classic greeting (“Yo, World!”).
+- `exo_02.rb`: Ask for a name and greet the user.
+- `exo_03.rb`: Ask for birth year and show the age in 2017.
+- `exo_04.rb`: Ask for birth year and show the year when the user turns 100.
+- `exo_05.rb`: Ask for a number and print a line that many times.
+- `exo_06.rb`: Ask for a number and print incremental lines up to that count minus one.
+- `exo_06_a.rb`: Same idea as exo_06 with robust input validation for a range (2–20).
+- `exo_07.rb`: Ask for a number and print numbers from 0 up to that number.
+- `exo_08.rb`: Ask for a number and print a countdown to 0, then “BOOM”.
+- `exo_09.rb`: Ask for birth year and show the current age.
+- `exo_10.rb`: From birth year, print each year and the age for that year.
+- `exo_11.rb`: From current age, print each past year count and the age back then.
+- `exo_12.rb`: Like exo_11, with a special message when age was half of today’s.
+- `exo_13.rb`: Generate 50 fake email addresses.
+- `exo_14.rb`: Generate only the even‑indexed fake email addresses.
+- `exo_15.rb`: Build a left‑aligned “half‑pyramid” with `#` characters.
+- `exo_16.rb`: Build a right‑aligned “half‑pyramid”.
+- `exo_17.rb`: Build a centered full pyramid (two halves combined).
 
-Made with :heart: by <a href="https://github.com/FlowTech-Lab" target="_blank">FlowTech</a>
+## Examples
 
-&#xa0;
+Run a script that requires input, e.g. `exo_07.rb`:
 
-<a href="#top">Back to top</a>
+```bash
+$ ruby exo_07.rb
+Yo, File moi un chiffre !
+> 5
+=== 0 ===
+=== 1 ===
+=== 2 ===
+=== 3 ===
+=== 4 ===
+=== 5 ===
+t'a vue j'suis trop FORT !
+```
+
+Run a pyramid script:
+
+```bash
+$ ruby exo_16.rb
+Yo, file-moi un chiffre entre 1 et 25 !
+> 4
+   #
+  ##
+ ###
+####
+```
+
+## Notes
+
+- These exercises are minimal by design and have no external dependencies.
+- Messages are kept as originally written (French slang) to match the exercise context.
+
+## License
+
+If you intend to use or distribute this code, please add a license file to clarify terms (MIT is a common choice). Absent a license file, all rights are reserved by the author.
+
+Made with ❤ by [FlowTech](https://github.com/FlowTech-Lab)
